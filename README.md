@@ -1,0 +1,2 @@
+# SmallServer
+Cloud node

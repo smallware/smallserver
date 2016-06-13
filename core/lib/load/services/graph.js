@@ -51,7 +51,7 @@ var nodeBase = {
       //console.log('---', this);
 
       // Complete arg
-      var s = _.assign({}, this._visitors, {log: S.log, id: this.id});
+      var s = _.assign({}, this._visitors, {log: S.log, id: this.id, db: S.db});
 
       var srvInit = co.wrap(this.service.init).bind(this.service, s);
 

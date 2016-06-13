@@ -1,0 +1,7 @@
+{
+  "name": "core dashboard",
+  "version": "0.1.0",
+  "dependencies": {
+    "http": "0.1.0"
+  }
+}

@@ -17,17 +17,8 @@ module.exports = function(S){
     // XXX
     console.log('rrr', this.path);
 
-    this.body = 'Smallcloud resource(s): ' + this.path.replace('/'+id, '');
+    this.body = 'Smallcloud dashboard: ' + this.path.replace('/'+id, '');
 
-
-  });
-
-  router.post('/', function*(next){
-
-    // XXX
-    console.log('+++', this.request.body);
-
-    this.body = this.request.body;
 
   });
 

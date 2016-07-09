@@ -6,6 +6,9 @@ module.exports = function(S){
 
   var id = this.id;
 
+  // XXX
+  console.log('>>> THIS:', this);
+
   // Router shorthand
   var router = new Router({
     prefix: '/' + id

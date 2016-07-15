@@ -63,11 +63,19 @@ module.exports = function*(S){
 
   // Register schema api
   router.get('/*', function*(){
+
+    // XXX
+    console.log('rrr', this.path);
+
     this.body = 'Smallcloud schema for: ' + this.path.replace('/'+id, '');
   });
 
   // Register routes
   S.http.routes.push(router.routes());
+
+
+
+
 
   // Get Schema db class
   var schemaClass = yield S.db.class.get('Schema');

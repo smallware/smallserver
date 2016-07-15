@@ -1,0 +1,32 @@
+
+$sidebarWith: 24%;
+
+body{
+  font-family: "Roboto", sans-serif;
+  background: #cccccc;
+  margin: 0;
+}
+
+.container{
+  box-shadow: 0 3px 5px #999;
+
+  .heading{
+    height: 280px;
+  }
+
+  .body{
+    background: #fff;
+    height: 1000px;
+  }
+}
+
+.sidebar{
+  width: $sidebarWith;
+//  min-width: 250px;
+  float: left;
+}
+
+.main{
+  float: left;
+  width: 100% - $sidebarWith;
+}

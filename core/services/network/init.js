@@ -8,6 +8,7 @@ module.exports = function(S){
 
   // DEV: Catch-all
   S.http.server.use(function*(){
+    console.log('404 Network: Hello from SmallCloud HTTP service catch-all!')
     this.body = 'Hello from SmallCloud HTTP service catch-all!';
   });
 
